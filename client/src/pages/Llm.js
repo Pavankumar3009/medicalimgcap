@@ -30,12 +30,14 @@ function Llm() {
     };
 
     return (
-        <div>
+        <div className="LlmContainer">
             <h1>LLM</h1>
-            <input type="file" onChange={handleImageUpload} />
-            {imagePreview && <img src={imagePreview} alt="Preview" style={{ maxWidth: '200px', height: 'auto' }} />}
+            <input type="file" id="fileUpload" onChange={handleImageUpload} />
+            <label htmlFor="fileUpload">Choose File</label>
+            {imagePreview && <img src={imagePreview} alt="Preview" />}
             <button onClick={handleSubmit}>Submit</button>
-            {caption && <p>{caption}</p>}
+            {caption && <h1 className="caption">Prediction</h1>}           
+            {caption && <p className="caption">{caption}</p>}
         </div>
     );
 }

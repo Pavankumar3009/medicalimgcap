@@ -87,7 +87,7 @@ exports.userOtpSend = async (req, res) => {
                     })
                     await frontend.messages.create({
                         body: `Your OTP is: ${OTP}`,
-                        to:"+919381737609",
+                        to:"+919133965525",
                         from: process.env.TWINUM,
                     });
 

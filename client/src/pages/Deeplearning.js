@@ -69,7 +69,7 @@ const Deeplearning = () => {
                     <div>Prediction: {prediction}</div>
                     {probabilities && (
                         <div>
-                            <h3>Probabilities:</h3>
+                            <h3>Probability:</h3>
                             <ul>
                                 {probabilities.map((prob, index) => (
                                     <li key={index}>{prob}</li>

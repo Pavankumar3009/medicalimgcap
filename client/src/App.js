@@ -23,7 +23,7 @@ const App = () => {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/user/otp" element={<Otp />} />
                 <Route path="/llm" element={<Llm />} />
-                <Route path="/llm2" element={<Llm2/>} />
+                {/* <Route path="/llm2" element={<Llm2/>} /> */}
                 <Route path="/deeplearning" element={<Deeplearning />} />
                 <Route path="*" element={<Error />} />
             </Routes>

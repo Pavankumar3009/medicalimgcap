@@ -21,9 +21,9 @@ const Dashboard = () => {
   return (
     <div className="Dashboard">
             <h1>Home page</h1>
-            <div className="button" onClick={()=>navigate("/llm")}>1.Large Language Model 1 (LLM 1)</div>
-            <div className="button" onClick={()=>navigate("/llm2")}>2.Large Language Model 2 (LLM 2)</div>
-            <div className="button" onClick={()=>navigate("/deeplearning")}>3.Deep Learning (DL)</div>
+            <div className="button" onClick={()=>navigate("/llm")}>Large Language Model (LLM)</div>
+            {/*<div className="button" onClick={()=>navigate("/llm2")}>2.Large Language Model 2 (LLM 2)</div>*/}
+            <div className="button" onClick={()=>navigate("/deeplearning")}>Deep Learning (DL)</div>
         </div>
   )
 }
